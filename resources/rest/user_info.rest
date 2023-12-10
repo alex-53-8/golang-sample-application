@@ -1,0 +1,3 @@
+GET http://localhost:8081/user/info HTTP/1.1
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJvc3NAY29tcGFueS5jb20iLCJleHBpcmVzIjoiMjAyMy0xMi0xOVQxNDowMDo1MC40ODM0NjUxOTUrMDI6MDAiLCJpZCI6IjJmM2Q5MmE5LWY0ZGItNDk3Yi1iZjE2LTM2N2JmMmFkN2UyMCJ9._sxibt_iuqKEwvXPezOn2D6-F4ChmqN12DuufUqN-9k
+Content-Type: application/json

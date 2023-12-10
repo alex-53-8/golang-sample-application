@@ -1,0 +1,5 @@
+POST http://localhost:8081/user/token HTTP/1.1
+authorization: token
+content-type: application/json
+
+{"email": "boss@company.com"}
