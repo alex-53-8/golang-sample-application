@@ -24,7 +24,7 @@ type DatabaseService struct {
 
 func (ds *DatabaseService) Init() {
 	if ds.pool != nil {
-		log.Println("database has already been created")
+		log.Println("database connection has already been initialized")
 		return
 	}
 
@@ -32,7 +32,7 @@ func (ds *DatabaseService) Init() {
 	dbpool, err := pgxpool.New(ctx, ds.DbConnectionUrl)
 
 	if err != nil {
-		log.Println("Unable to create database connections' pool: ", err)
+		log.Println("unable to create database connections' pool: ", err)
 		os.Exit(1)
 	}
 
