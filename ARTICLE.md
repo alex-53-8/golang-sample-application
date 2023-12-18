@@ -1,6 +1,6 @@
 ![Alt text](golang.jpg)
 
-# What is it to develop applications with Golang after Java?
+# What is it like to develop applications using Golang when you have experience with Java?
 
 Hi everyone. In this article I would like to collect few aspects of software development with Golang from point of view of a Software Developer/Architech. I have experiance with Java since 2005 when I started to use sometimes the language for server-side application having experience already with C/C++. Few years ago I started to use Golang as well as few other languages at daily work and I would say that I definitely like the philosophy of the Golang. I cannot say that I like absolutely everything in Golang, but definitely I would use the language more. The article is not about use cases when to use Golang, but more about how to use different software development techiniques, which are used in Java (and other languages as well). What does it take to use Test Driven Development and Behavior Driven Development with Golang? In my opinion TDD and BDD are the most important approaches in software development and knowledge sharing. In this article I wanted to share my personal experience which I've got when I was making first steps in Golang few years ago. I'd started to work with a huge application written completely in Golang - it really does not matter why the application was big and monolith, sometimes we have to maintain and develop decisions especially if such a thing appears before you join a team/company.
 
