@@ -2,7 +2,7 @@
 
 # What is it like to develop applications using Golang when you have experience with Java?
 
-Hi everyone. In this article I would like to collect few aspects of software development with Golang from point of view of a Software Developer/Architech. I have experiance with Java since 2005 when I started to use sometimes the language for server-side application having experience already with C/C++. Few years ago I started to use Golang as well as few other languages at daily work and I would say that I definitely like the philosophy of the Golang. I cannot say that I like absolutely everything in Golang, but definitely I would use the language more. The article is not about use cases when to use Golang, but more about how to use different software development techiniques, which are used in Java (and other languages as well). What does it take to use Test Driven Development and Behavior Driven Development with Golang? In my opinion TDD and BDD are the most important approaches in software development and knowledge sharing. In this article I wanted to share my personal experience which I've got when I was making first steps in Golang few years ago. I'd started to work with a huge application written completely in Golang - it really does not matter why the application was big and monolith, sometimes we have to maintain and develop decisions especially if such a thing appears before you join a team/company.
+Hi everyone. In this article I would like to collect few aspects of software development with Golang from point of view of a Software Developer/Architech. I have experience with Java since 2005 when I started to use sometimes the language for server-side application having experience already with C/C++. Few years ago I started to use Golang as well as few other languages at daily work and I would say that I definitely like the philosophy of the Golang. I cannot say that I like absolutely everything in Golang, but definitely I would use the language more. The article is not about use cases when to use Golang, but more about how to use different software development techniques, which are used in Java (and other languages as well). What does it take to use Test Driven Development and Behavior Driven Development with Golang? In my opinion TDD and BDD are the most important approaches in software development and knowledge sharing. In this article I wanted to share my personal experience which I've got when I was making first steps in Golang few years ago. I'd started to work with a huge application written completely in Golang - it really does not matter why the application was big and monolith, sometimes we have to maintain and develop decisions especially if such a thing appears before you join a team/company.
 
 ## Test Driven Development with Golang
 
@@ -39,7 +39,7 @@ public class CalculatorTest {
 
 ## Mocking with Golang
 
-The most interesting part of unit testsing is mocking. Java library `Mockito` manipulates with Java code to create mocks or a developer can derive a basic interface and few implementations from the interface where one of which can be a mock which is used in unit tests. In overall mocking in Java is something really simple and useful.
+The most interesting part of unit testing is mocking. Java library `Mockito` manipulates with Java code to create mocks or a developer can derive a basic interface and few implementations from the interface where one of which can be a mock which is used in unit tests. In overall mocking in Java is something really simple and useful.
 
 ```java
 public class Calculator {
@@ -77,7 +77,7 @@ public class NumbersTest {
 
 ```
 
-It is completely different in Golang - the language itself does not offer anything similar to bytecode manipulatio as Java offers OOB. Usual approach in Golang is to use interfaces and supply one implementation with business logic and another mocked.
+It is completely different in Golang - the language itself does not offer anything similar to bytecode manipulation as Java offers OOB. Usual approach in Golang is to use interfaces and supply one implementation with business logic and another mocked.
 
 ```go
 // basic interface
@@ -97,7 +97,7 @@ func MakeAddition(c Calculator) int {
 }
 ```
 
-And now we want to test `MakeAddition` function. With interface it is really simple - just introduce your mock implementaion.
+And now we want to test `MakeAddition` function. With interface it is really simple - just introduce your mock implementation.
 ```go
 type CalculatorMock struct {
 	AddExpectedValue int
